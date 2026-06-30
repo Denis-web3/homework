@@ -1,0 +1,35 @@
+body {
+	font-family: sans-serif;
+	color: rgb(255, 81, 0);
+	background-color: rgb(51, 51, 51);
+}
+
+p {
+	margin-bottom: 0%;
+}
+
+span {
+	font-size: 12px;
+}
+textarea {
+	resize: vertical;
+}
+fieldset {
+	width: 250px;
+	border-radius: 7px;
+}
+button {
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+.title {
+	font-weight: bold;
+}
+
+.lable {
+	display: block;
+	cursor: pointer;
+}
+.lable input[type="checkbox"] {
+	cursor: pointer;
