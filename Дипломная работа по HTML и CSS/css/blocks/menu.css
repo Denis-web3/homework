@@ -1,0 +1,39 @@
+.menu__list {
+	display: flex;
+	align-items: center;
+	gap: 50px;
+}
+
+.menu__link {
+	position: relative;
+	font-family: var(--second-family);
+	font-weight: 600;
+	font-size: 22px;
+	color: var(--main-color);
+}
+
+.menu__link::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	background-color: var(--accent-color);
+	width: 0;
+	height: 0;
+	border-radius: 50%;
+	z-index: var(--layer-negative);
+	transform: translate(-50%, -50%);
+	transition: var(--transition-time);
+}
+
+/* .menu__link:hover::before {
+	width: 40px;
+	height: 40px;
+} */
+
+@media (any-hover: hover) {
+	.menu__link:hover::before {
+		width: 40px;
+		height: 40px;
+	}
+}
