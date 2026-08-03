@@ -1,0 +1,115 @@
+<!doctype html>
+<html class="page" lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/index.css" />
+		<link
+			rel="shortcut icon"
+			href="./icons/puls-favicon.svg"
+			type="image/x-icon"
+		/>
+		<script defer src="./js/index.js" type="module"></script>
+		<title>Pulse Fitness Center</title>
+	</head>
+	<body class="page__body">
+		<header class="header">
+			<div class="container header__container">
+				<a class="logo header__logo" href="#">
+					<img
+						class="logo__img"
+						src="/icons/Logo-icon.svg"
+						width="198"
+						height="38"
+						alt="logo"
+					/>
+				</a>
+				<nav class="menu header__menu" aria-label="navigation menu">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a class="menu__link" href="#home">HOME</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#catalogs">CATALOGS</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#blog">BLOG</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#collections">COLLECTIONS</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#contact-us">CONTACT US</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__actions">
+					<button class="header__action-button" title="cart" aria-label="cart">
+						<svg width="37" height="33">
+							<use
+								class="header__actions-icon"
+								href="./icons/sprite.svg#cart"
+							></use>
+						</svg>
+					</button>
+					<button
+						class="header__action-button"
+						title="search"
+						aria-label="cart"
+					>
+						<svg width="29" height="29">
+							<use
+								class="header__actions-icon"
+								href="./icons/sprite.svg#search"
+							></use>
+						</svg>
+					</button>
+					<button
+						class="header__burger burger"
+						aria-label="Open menu"
+						aria-expanded="false"
+						aria-controls="header__menu"
+					>
+						<svg width="25" height="22">
+							<use
+								class="burger__icon-menu"
+								href="./icons/sprite.svg#burger"
+							></use>
+							<use
+								class="burger__icon-cross"
+								href="./icons/sprite.svg#cross"
+							></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="hero">
+				<div class="container hero__container">
+					<div class="hero__title-container">
+						<h1 class="hero__title-front">
+							POWER<br />
+							FROM WITHIN
+						</h1>
+						<h1 class="hero__title-back">WITHIN</h1>
+					</div>
+					<picture>
+						<source srcset="./images/hero-image-1.webp" type="image/webp" />
+						<img
+							class="hero__img"
+							src="./images/hero-image-1.webp"
+							width="1920"
+							height="519"
+							alt="a man is training on a crossbar"
+							fetchpriority="high"
+						/>
+					</picture>
+					<button class="hero__button button">
+						<img src="/icons/hero-button-icon.svg" alt="Arrow content button" />
+					</button>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
