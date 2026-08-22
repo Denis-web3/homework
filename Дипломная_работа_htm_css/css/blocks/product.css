@@ -88,6 +88,7 @@
 	position: absolute;
 	top: 0;
 	left: clamp(2px, -505.65px + 61.91vw, 683px);
+	z-index: var(--layer-negative);
 }
 
 @media (width <= 820px) {
