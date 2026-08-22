@@ -1,0 +1,22 @@
+/* base */
+@import "./base/normalize.css";
+@import "./base/fonts.css";
+@import "./base/vars.css";
+@import "./base/globals.css";
+
+/* blocks */
+@import "./blocks/header.css";
+@import "./blocks/menu.css";
+@import "./blocks/burger.css";
+@import "./blocks/hero.css";
+@import "./blocks/catalogs.css";
+@import "./blocks/product.css";
+@import "./blocks/type.css";
+@import "./blocks/trainings.css";
+@import "./blocks/feedback.css";
+@import "./blocks/discription.css";
+@import "./blocks/benefits.css";
+@import "./blocks/timetable.css";
+@import "./blocks/training-video.css";
+@import "./blocks/centers.css";
+@import "./blocks/footer.css";

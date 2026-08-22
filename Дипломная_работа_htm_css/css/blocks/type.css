@@ -1,0 +1,122 @@
+.type__container {
+	/* height: 219px; */
+	margin-inline: auto;
+	color: var(--bg-color);
+}
+
+.type__media {
+	padding-top: 42px;
+	padding-bottom: 36px;
+	height: 219px;
+	background-color: var(--main-color);
+	overflow: hidden;
+}
+
+.type__list {
+	display: flex;
+	flex-wrap: nowrap;
+	width: max-content;
+	gap: 34px;
+	animation: running-text 200s linear infinite;
+}
+
+@keyframes running-text {
+	0% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(-50%);
+	}
+}
+
+.type__item {
+	display: flex;
+	align-items: center;
+	gap: 34px;
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 100px;
+}
+
+.type__item::before {
+	display: block;
+	content: "";
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background-color: var(--accent-color);
+}
+
+.type__cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2px;
+	max-width: var(--container-width);
+	margin-inline: auto;
+}
+
+@media (width <=576px) {
+	.type__cards {
+		grid-template-columns: 1fr;
+	}
+}
+
+.type__card-link {
+	display: block;
+	transition:
+		transform var(--transition-time),
+		box-shadow var(--transition-time);
+}
+
+@media (any-hover: hover) {
+	.type__card-link:hover {
+		transform: translateY(-10px);
+		box-shadow: 0 20px 40px var(--bg-color);
+	}
+}
+
+.type__card-footer {
+	padding: 63px 70px 58px 56px;
+	min-height: 144px;
+	background-color: var(--main-color);
+}
+
+@media (width <=768px) {
+	.type__card-footer {
+		padding-inline: 25px;
+	}
+}
+
+@media (width <=1200px) {
+	.type__card-footer {
+		padding-inline: 10px;
+	}
+}
+
+@media (width <=576px) {
+	.type__card-footer {
+		padding-inline: 30px;
+	}
+}
+
+.type__card-cta {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-family: var(--second-family);
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 144%;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--bg-color);
+}
+
+.type__card-cta::after {
+	display: inline-block;
+	content: "";
+	width: 21px;
+	height: 21px;
+	background-image: url("/icons/arrow-link-icon.svg");
+	transition: filter var(--transition-time);
+}

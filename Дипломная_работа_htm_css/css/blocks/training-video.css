@@ -1,0 +1,40 @@
+.training-video-container {
+	position: relative;
+	max-width: var(--container-width);
+	margin-inline: auto;
+}
+
+.training-video__img {
+	max-width: 100%;
+	height: auto;
+}
+
+.training-video__paly-link {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 122px;
+	height: 122px;
+	border-radius: 50%;
+	background-color: var(--accent-color);
+	transition:
+		transform 0.6s ease,
+		box-shadow 0.3s ease,
+		background-color 0.3s ease;
+}
+
+@media (any-hover: hover) {
+	.training-video__paly-link:hover {
+		transform: translate(-50%, -50%) rotate(360deg) scale(1.1);
+		background-color: #ff8c42;
+		box-shadow: 0 0 50px rgba(229, 90, 37, 0.6);
+	}
+}
+
+.training-video__paly-icon {
+	transform: translateX(5px);
+}

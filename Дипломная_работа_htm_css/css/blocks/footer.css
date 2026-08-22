@@ -1,0 +1,161 @@
+.footer__container {
+	max-width: var(--footer-container-width);
+	margin-inline: auto;
+	padding-inline: 1px;
+}
+
+.footer__head {
+	display: flex;
+	justify-content: space-between;
+	padding-block: 75px;
+	border-bottom: 1px solid var(--border-color);
+	margin-bottom: 101px;
+}
+
+.footer__head-title {
+	position: relative;
+}
+
+@media (width <= 768px) {
+	.footer__head-title {
+		font-size: 30px;
+	}
+}
+
+@media (width <= 575px) {
+	.footer__head-title {
+		font-size: 20px;
+	}
+}
+
+.footer__head-title::before {
+	display: block;
+	content: "";
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	top: 50%;
+	left: 0;
+	transform: translate(-50%, -50%);
+	border-radius: 100px;
+	background-color: var(--accent-color);
+	z-index: var(--layer-negative);
+}
+
+@media (width <= 768px) {
+	.footer__head-title::before {
+		width: 40px;
+		height: 40px;
+	}
+}
+
+.footer__content {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 165px;
+}
+
+.footer__social {
+	display: flex;
+	flex-direction: column;
+	gap: 47px;
+	width: 267px;
+	margin-bottom: 70px;
+}
+
+.footer__contact {
+	display: flex;
+	flex-direction: column;
+
+	gap: 15px;
+}
+
+.footer__subtitle {
+	font-family: var(--second-family);
+	font-weight: 600;
+	color: var(--subtitle-color);
+}
+
+.footer__email {
+	font-weight: 400;
+	color: var(--title-color);
+}
+
+.footer__phone {
+	font-weight: 400;
+	color: var(--title-color);
+}
+
+.footer__media {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.footer__media-icon {
+	display: flex;
+	gap: 45px;
+}
+
+.footer__location-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 166px;
+}
+
+@media (width <= 768px) {
+	.footer__location-wrapper {
+		gap: clamp(66px, -29.42px + 25.45vw, 166px);
+	}
+}
+
+.footer__location {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	width: 203px;
+}
+
+.footer__city {
+	margin-bottom: 12px;
+	/* white-space: nowrap; */
+}
+
+.footer__adress-text {
+	font-family: var(--second-family);
+	font-weight: 400;
+	font-size: 20px;
+	color: var(--subtitle-color);
+}
+
+.footer__hours {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	width: 253px;
+}
+
+.footer__right {
+	position: relative;
+	color: var(--title-color);
+	height: 88px;
+	background-color: #303030;
+}
+
+.footer__right-text {
+	position: absolute;
+	top: 28px;
+	left: 106px;
+	font-family: var(--second-family);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 194%;
+	opacity: 0.6;
+}
+
+@media (width <= 575px) {
+	.footer__right-text {
+		left: 10px;
+	}
+}
