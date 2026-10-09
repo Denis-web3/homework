@@ -1,0 +1,71 @@
+body.no-scroll {
+	overflow: hidden;
+}
+
+body {
+	font-family: OpenSans, sans-serif;
+	font-weight: 400;
+}
+
+.page {
+	font-family: var(--font-family);
+	font-weight: 400;
+	color: var(--main-color);
+	scroll-behavior: smooth;
+}
+
+.page__body {
+	min-width: 375px;
+	background-color: var(--bg-color);
+}
+
+.page__body--no-scroll {
+	overflow-y: hidden;
+}
+
+.container {
+	margin-inline: auto;
+}
+
+.title-xxs,
+.title-xs,
+.title-sm,
+.title-md,
+.title-lg {
+	font-family: var(--font-family);
+}
+
+.title-xxxs {
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.title-xxs {
+	font-weight: 500;
+	font-size: 30px;
+}
+
+.title-xs {
+	font-weight: 600;
+	font-size: 42px;
+}
+
+.title-sm {
+	font-weight: 500;
+	font-size: 50px;
+}
+
+.title-md {
+	font-weight: 500;
+	font-size: 70px;
+}
+
+.title-lg {
+	font-weight: 600;
+	font-size: 100px;
+}
+
+.text-xs {
+	font-weight: 600;
+	font-size: 42px;
+}
