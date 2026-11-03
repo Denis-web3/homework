@@ -45,6 +45,7 @@
 .coach__cards {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	gap: clamp(10px, -156.92px + 16.83vw, 45px);
 	margin-bottom: 136px;
 }
