@@ -1,0 +1,25 @@
+.back-to-top {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	opacity: 0;
+	visibility: hidden;
+	transition:
+		opacity var(--transition-time),
+		visibility var(--transition-time);
+	transform: var(--transition-time);
+	background-color: var(--accent-color);
+	z-index: var(--layer-3);
+}
+
+.back-to-top--visible {
+	opacity: 1;
+	visibility: visible;
+}
+
+.button-icon-up {
+	transform: translateX(50%) rotate(-90deg);
+}
